@@ -1,0 +1,28 @@
+<!-- <web-app>
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>com.example.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+</web-app> -->
+<web-app>
+    <servlet>
+        <servlet-name>abc</servlet-name>
+        <servlet-class>com.navesh.AddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>abc</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>pqr</servlet-name>
+        <servlet-class>com.navesh.SquareServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>pqr</servlet-name>
+        <url-pattern>/sq</url-pattern>
+    </servlet-mapping>
+</web-app>  
