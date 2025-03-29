@@ -25,4 +25,4 @@
         <servlet-name>pqr</servlet-name>
         <url-pattern>/sq</url-pattern>
     </servlet-mapping>
-</web-app>  
+</web-app> 
