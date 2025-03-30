@@ -1,0 +1,31 @@
+Create a Folder:
+
+Name it something like MyJSPProject.
+
+Set Up Folder Structure:
+
+
+MyJSPProject/
+├── WEB-INF/
+│   ├── web.xml
+│   └── lib/
+├── index.jsp
+└── META-INF/
+
+Add Required Files:
+
+index.jsp – Main JSP file.
+
+WEB-INF/web.xml – Deployment descriptor.
+
+Set Up Tomcat:
+
+Download and configure Apache Tomcat.
+
+Place your project in webapps directory.
+
+Run the Project:
+
+Start Tomcat.
+
+Access via http://localhost:8080/MyJSPProject/index.jsp.
