@@ -9,6 +9,13 @@
 <body>
 
 	<%
+		// Clear the browser cache to prevent users from going back after logout
+		response.setHeader("Cache-Control","no-cache, no-store, must-revalidate");	//HTTP 1.1
+		
+		response.setHeader("Progma", "no-cache"); //HTTP 1.0
+		
+		response.setHeader("Expires", "0"); //Proxies
+		
 		if(session.getAttribute("username") == null){
 			response.sendRedirect("login.jsp");
 		}
@@ -18,6 +25,7 @@
 	<div>Video 3</div>
 	<div>Video 4</div>
 	<div>Video 5</div>
+	<a href="about.jsp">About Us</a>
 	<form action="Logout">
 		<input type="submit" value="Logout">
 	</form>
