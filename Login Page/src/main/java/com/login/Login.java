@@ -9,6 +9,8 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
+import com.login.dao.LoginDao;
+
 /**
  * Servlet implementation class Login
  */
@@ -21,7 +23,10 @@ public class Login extends HttpServlet {
 		String uname=request.getParameter("uname");
 		String pass=request.getParameter("pass");
 		
-		if(uname.equals("admin") && pass.equals("admin")) {
+		LoginDao dao = new LoginDao();
+
+		
+		if(dao.check(uname, pass)) {
 			HttpSession session = request.getSession();
 			session.setAttribute("username",uname);
 			response.sendRedirect("welcome.jsp");
