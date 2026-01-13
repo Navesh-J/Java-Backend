@@ -1,0 +1,69 @@
+/* ===== Page Background ===== */
+body {
+    background-color: #007bff; /* Your original blue */
+}
+
+/* ===== Oval Box Container ===== */
+.oval-box-container {
+    display: flex;
+    justify-content: space-around; /* Your original layout */
+    gap: 30px;
+    margin-top: 15px; /* Your original spacing */
+    flex-wrap: wrap;
+}
+
+/* ===== Oval Cards ===== */
+.oval-box {
+    position: relative;
+    width: 300px; /* Your original width */
+    height: 200px; /* Your original height */
+    background-color: #71816d; /* Your original color */
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    /* Enhancements */
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease,
+                background-color 0.25s ease;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Hover Effect (your original + enhanced) */
+.oval-box:hover {
+    background-color: #0056b3; /* Your original hover color */
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+/* ===== Text Inside Ovals ===== */
+.oval-box h4 {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.oval-box p {
+    font-size: 15px;
+    opacity: 0.9;
+    margin-bottom: 0;
+}
+
+/* ===== Responsive Behavior ===== */
+@media (max-width: 768px) {
+    .oval-box-container {
+        justify-content: center;
+    }
+
+    .oval-box {
+        width: 260px;
+        height: 180px;
+        margin-bottom: 20px;
+    }
+}
